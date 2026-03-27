@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ingeniería de Sistemas</title>
+
+<style>
+body {
+    font-family: serif;
+    margin: 20px;
+}
+
+.seccion {
+    display: none;
+}
+.activa {
+    display: block;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+</style>
+
+<script>
+function mostrar(seccion) {
+    document.getElementById("inicio").classList.remove("activa");
+    document.getElementById("docentes").classList.remove("activa");
+    document.getElementById("materias").classList.remove("activa");
+
+    document.getElementById(seccion).classList.add("activa");
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="inicio" class="seccion activa">
+    <h1>Ingeniería de Sistemas</h1>
+    <h2>Semestre: 1/2026</h2>
+
+    <ul>
+        <li><a href="#" onclick="mostrar('docentes')">Docentes</a></li>
+        <li><a href="#" onclick="mostrar('materias')">Materias</a></li>
+    </ul>
+</div>
+
+<div id="docentes" class="seccion">
+    <h1>Lista Docentes 1/2026</h1>
+    <a href="#" onclick="mostrar('inicio')">⬅ Volver</a>
+
+
+    <table>
+    <tr>
+        <th>Nro</th>
+        <th>Apellidos y Nombres</th>
+        <th>Materias</th>
+        <th>Carga Horaria</th>
+    </tr>
+
+    <tr><td>1</td><td>Pacheco Alvarez Kary</td> <br>
+        <td>LIN 140 G1 <br>
+            LIN 140 G2 <br>
+        </td>
+        <td>8 Hrs</td>
+    </tr>
+    <tr><td>2</td><td>Colque Caballero Sabino</td>
+        <td>MAT100 G1 <br>
+            MAT 100 G2 <br>
+            MAT 101 G3<br>
+            MAT 204 G1<br>
+            SIS 443 G1<br>
+            </td>
+            <td>30 Hrs</td>
+        </tr>
+    <tr><td>3</td><td>Camacho Ocsachoque Nelly</td>
+        <td>MAT 102 G1 <br>
+            MAT 206 G1</td>
+            <td>10 Hrs</td>
+        </tr>
+    <tr><td>4</td><td>Bravo Villafuerte Clever</td>
+        <td>SIS 110 G1<br>
+            SIS 211 G1<br>
+            SIS 532 G1<br>
+            SIS 624 G1<br>
+        </td>
+            <td>26 Hrs</td>
+        </tr>
+    <tr><td>5</td><td>Huayllas Garcia Juana</td>
+        <td>LIN 140 G3<br>
+            LIN 140 G4<br>
+        </td>
+        <td>8 Hrs</td>
+    </tr>
+    <tr><td>6</td><td>Choque Mamani Porfirio</td>
+        <td>MAT 101 G2<br>
+            MAT 203 G2<br>
+            MAT 307 G1<br>
+        </td><td>18 Hrs</td>
+    </tr>
+    <tr><td>7</td><td>Borja Mamani Raquel</td>
+        <td>MAT 102 G2 <br>
+            MAT 206 G2<br>
+        </td><td>10 Hrs</td>
+    </tr>
+    <tr><td>8</td><td>Huarachi Mamani Lidia</td>
+        <td>MAT 102 G3</td>
+        <td>5 Hrs</td>
+    </tr>
+    <tr><td>9</td><td>Ortega Reyes Efrain</td>
+        <td>MAT 102 G4</td>
+        <td>5 Hrs</td>
+    </tr>
+    <tr><td>10</td><td>Pozo Hidalgo Ruth</td>
+        <td>MAT 203 G1<br>
+             MAT 204 G2<br>
+             MAT 307 G2<br>
+            </td>
+             <td>18 Hrs</td>
+    </tr>
+    <tr><td>11</td><td>Lopez Quentasi Jesus</td>
+        <td>SIS 110 G2<br>
+            SIS 415 G1<br>
+            SIS 518 G2<br>
+            SIS 735 G1<br>
+        </td>
+            <td>25 Hrs</td>
+        </tr>
+    <tr><td>12</td><td>Terrazas Quispe Wilfredo</td>
+        <td>SIS 110 G3<br>
+            SIS 415 G2<br>
+            SIS 518 G1<br>
+            SIS 848 G1</td>
+            <td>23 Hrs</td>
+        </tr>
+    <tr><td>13</td><td>Puita Choque Gustavo</td>
+        <td>SIS 110 G4<br>
+            SIS 141 G2<br>
+            SIS 522 G1<br>
+            SIS 645 G1<br>
+            OPT 005 G1<br>
+        </td>
+            <td>29 Hrs</td>
+        </tr>
+    <tr><td>14</td><td>Choque Matos Javier</td>
+        <td>SIS 141 G1<br> 3
+            SIS 313 G1<br> 6
+            SIS 414 G2<br> 8
+        </td>
+            <td>17 Hrs</td>
+        </tr>
+    <tr><td>15</td><td>Sanchez Perez Karina</td>
+        <td>SIS 141 G3<br>
+            SIS 141 G4<br>
+            SIS 230 G2<br>
+            SIS 331 G1</td>
+            <td>18 Hrs</td>
+        </tr>
+    <tr><td>16</td><td>Velarde Flores Kimberly</td>
+        <td>SIS 230 G1<br>
+            SIS 331 G2<br>
+            SIS 747 G1</td>
+            <td>18 Hrs</td>
+        </tr>
+    <tr><td>17</td><td>Mamani Huanaco Elias</td>
+        <td>FIS 205 G1<br>
+            FIS 308 G1<br>
+            FIS 308 G2<br>
+            SIS 421 G1</td>
+            <td>27 Hrs</td>
+        </tr>
+    <tr><td>18</td><td>Ramos Castro Roberto</td>
+        <td>FIS 205 G1</td>
+        <td>9 Hrs</td>
+    </tr>
+    <tr><td>19</td><td>Humerez Martinez Grover</td>
+        <td>SIS 312 G1<br>
+            SIS 634 G1<br>
+            SIS 849 G4<br>
+            SIS 940 G4<br>
+            OPT 001 G1<br>
+        </td>
+            <td>25 Hrs</td>
+        </tr>
+    <tr><td>20</td><td>Choque Gutierrez Juan Jose</td>
+        <td>SIS 312 G2<br>
+            SIS 342 G1</td>
+            SIS 342 G2</td>
+            <td>19 Hrs</td>
+        </tr>
+    <tr><td>21</td><td>Mamani Figueroa Jose David</td>
+        <td>SIS 313 G2<br>
+            SIS 414 G1</td>
+            <td>14 Hrs</td>
+        </tr>
+    <tr><td>22</td><td>Mercado Algaranaz Anny</td>
+        <td>SIS 416 G1<br>
+            SIS 416 G2<br>
+            SIS 849 G3<br>
+            SIS 940 G3<br>
+            SIS 940 G5<br>
+        </td>
+        <td>21 Hrs</td>
+    </tr>
+    <tr><td>23</td><td>Choque Mamani Eduardo</td>
+        <td>SIS 420 G1<br>
+            SIS 421 G1<br>
+            SIS 420 G2<br>
+            SIS 421 G2<br>
+        </td>
+            <td>24 Hrs</td>
+        </tr>
+    <tr><td>24</td><td>Claure Sempertegui Jenny</td>
+        <td>SIS 517 G1<br>
+            SIS 517 G2<br>
+            SIS 646 G1<br>
+            SIS 849 G1<br>
+            SIS 940 G1<br>
+        </td>
+            <td>24 Hrs</td>
+        </tr>
+    <tr><td>25</td><td>Duran Miranda Javier</td>
+        <td>SIS 523 G1<br>
+            SIS 523 G2<br>
+            SIS 625 G2<br>
+            SIS 737 G1<br>
+        </td>
+            <td>26 Hrs</td>
+        </tr>
+    <tr><td>26</td><td>Castro Angulo Ditmar</td>
+        <td>SIS 211 G2<br>
+            SIS 544 G1<br>
+            SIS 710 G1<br>
+            SIS 719 G1<br>
+        </td>
+            <td>26 Hrs</td>
+        </tr>
+    <tr><td>27</td><td>Apaza Surculento Oscar</td>
+        <td>SIS 633 G1<br>
+            SIS 838 G1<br>
+            OPT 004 G1<br>
+            OPT 015 G1<br>
+        </td>
+            <td>24 Hrs</td>
+        </tr>
+    <tr><td>28</td><td>Ruiz Molina Limber</td>
+        <td>SIS 736 G1<br>
+            SIS 939 G2<br>
+            SIS 939 G1<br>
+            SIS 940 G2<br>
+        </td>
+            <td>22 Hrs</td>
+        </tr>
+<tr><td>29</td><td>Lopez Orcko Alex Sander</td>
+        <td>Auxiliar de SIS 313 G1<br>
+            
+        </td>
+            <td>6 Hrs</td>
+        </tr>
+    </table>
+</div>
+
+<!-- MATERIAS -->
+<div id="materias" class="seccion">
+    <h1>Lista de Materias</h1>
+    <a href="#" onclick="mostrar('inicio')">⬅ Volver</a>
+
+    <table>
+<tr>
+    <th>Nro</th>
+    <th>Sigla</th>
+    <th>Nombre</th>
+    <th>Horas Teóricas</th>
+    <th>Horas Prácticas</th>
+    <th>Total Horas Semanal</th>
+    <th>Auxiliar</th>
+</tr>
+
+<!-- PRIMER SEMESTRE -->
+<tr><td>1</td><td>LIN140</td><td>Inglés Técnico</td><td>0</td><td>4</td><td>4</td><td>No tiene</td></tr>
+<tr><td>2</td><td>MAT100</td><td>Álgebra</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+<tr><td>3</td><td>MAT101</td><td>Cálculo I</td><td>6</td><td>2</td><td>8</td><td>Tiene</td></tr>
+<tr><td>4</td><td>MAT102</td><td>Estadística I</td><td>3</td><td>2</td><td>5</td><td>Tiene</td></tr>
+<tr><td>5</td><td>SIS110</td><td>Técnicas de Programación I</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+<tr><td>6</td><td>SIS141</td><td>Computación Básica</td><td>0</td><td>3</td><td>3</td><td>No tiene</td></tr>
+
+<!-- SEGUNDO SEMESTRE -->
+<tr><td>7</td><td>FIS205</td><td>Física I</td><td>3</td><td>3</td><td>6</td><td>No tiene</td></tr>
+<tr><td>8</td><td>MAT203</td><td>Álgebra Lineal y Teoría Matricial</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+<tr><td>9</td><td>MAT204</td><td>Cálculo II</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+<tr><td>10</td><td>MAT206</td><td>Estadística II</td><td>3</td><td>2</td><td>5</td><td>Tiene</td></tr>
+<tr><td>11</td><td>SIS211</td><td>Técnicas de Programación II</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+<tr><td>12</td><td>SIS230</td><td>Sistemas Contables</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+
+<!-- TERCER SEMESTRE -->
+<tr><td>13</td><td>FIS308</td><td>Física II</td><td>3</td><td>3</td><td>6</td><td>No tiene</td></tr>
+<tr><td>14</td><td>MAT307</td><td>Cálculo III</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+<tr><td>15</td><td>SIS312</td><td>Estructura de Datos</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+<tr><td>16</td><td>SIS313</td><td>Diseño y Programación Gráfica</td><td>0</td><td>6</td><td>6</td><td>Tiene</td></tr>
+<tr><td>17</td><td>SIS331</td><td>Modelos Administrativos</td><td>4</td><td>2</td><td>6</td><td>No tiene</td></tr>
+<tr><td>18</td><td>SIS342</td><td>Análisis Discreto</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+
+<!-- CUARTO SEMESTRE -->
+<tr><td>19</td><td>SIS414</td><td>Tecnologías Emergentes</td><td>0</td><td>6</td><td>6</td><td>Tiene</td></tr>
+<tr><td>20</td><td>SIS415</td><td>Base de Datos</td><td>3</td><td>3</td><td>6</td><td>Tiene</td></tr>
+<tr><td>21</td><td>SIS416</td><td>Análisis de Sistemas I</td><td>3</td><td>2</td><td>5</td><td>Tiene</td></tr>
+<tr><td>22</td><td>SIS420</td><td>Sistemas Digitales</td><td>2</td><td>2</td><td>4</td><td>Tiene</td></tr>
+<tr><td>23</td><td>SIS421</td><td>Electrónica</td><td>2</td><td>2</td><td>4</td><td>No tiene</td></tr>
+<tr><td>24</td><td>SIS443</td><td>Investigación Operativa I</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+
+<!-- QUINTO SEMESTRE -->
+<tr><td>25</td><td>SIS517</td><td>Análisis de Sistemas II</td><td>3</td><td>3</td><td>6</td><td>Tiene</td></tr>
+<tr><td>26</td><td>SIS518</td><td>Taller de Base de Datos</td><td>0</td><td>6</td><td>6</td><td>Tiene</td></tr>
+<tr><td>27</td><td>SIS522</td><td>Arquitectura de Computadoras</td><td>3</td><td>3</td><td>6</td><td>Tiene</td></tr>
+<tr><td>28</td><td>SIS523</td><td>Redes I</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+<tr><td>29</td><td>SIS532</td><td>Sistemas Operativos</td><td>2</td><td>2</td><td>4</td><td>Tiene</td></tr>
+<tr><td>30</td><td>SIS544</td><td>Investigación Operativa II</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+
+<!-- SEXTO SEMESTRE -->
+<tr><td>31</td><td>SIS624</td><td>Configuración de Servidores</td><td>0</td><td>5</td><td>5</td><td>Tiene</td></tr>
+<tr><td>32</td><td>SIS625</td><td>Taller de Redes</td><td>0</td><td>6</td><td>6</td><td>Tiene</td></tr>
+<tr><td>33</td><td>SIS633</td><td>Ingeniería de Sistemas</td><td>4</td><td>2</td><td>6</td><td>No tiene</td></tr>
+<tr><td>34</td><td>SIS634</td><td>Modelos Económicos</td><td>3</td><td>3</td><td>6</td><td>No tiene</td></tr>
+<tr><td>35</td><td>SIS645</td><td>Simulación de Sistemas</td><td>2</td><td>3</td><td>5</td><td>No tiene</td></tr>
+<tr><td>36</td><td>SIS646</td><td>Ingeniería de Software</td><td>4</td><td>2</td><td>6</td><td>Tiene</td></tr>
+
+<!-- SÉPTIMO SEMESTRE -->
+<tr><td>37</td><td>SIS710</td><td>Dinámica de Sistemas</td><td>2</td><td>2</td><td>4</td><td>Tiene</td></tr>
+<tr><td>38</td><td>SIS719</td><td>Seminario de Sistemas</td><td>0</td><td>6</td><td>6</td><td>Tiene</td></tr>
+<tr><td>39</td><td>SIS735</td><td>Auditoría de Sistemas</td><td>2</td><td>3</td><td>5</td><td>Tiene</td></tr>
+<tr><td>40</td><td>SIS736</td><td>Preparación y Evaluación de Proyectos</td><td>3</td><td>2</td><td>5</td><td>No tiene</td></tr>
+<tr><td>41</td><td>SIS737</td><td>Seguridad de Sistemas</td><td>2</td><td>2</td><td>4</td><td>Tiene</td></tr>
+<tr><td>42</td><td>SIS747</td><td>Metodología de la Investigación</td><td>3</td><td>3</td><td>6</td><td>Tiene</td></tr>
+
+<!-- OCTAVO SEMESTRE -->
+<tr><td>43</td><td>SIS838</td><td>Gestión de Calidad</td><td>2</td><td>2</td><td>4</td><td>No tiene</td></tr>
+<tr><td>44</td><td>SIS848</td><td>Práctica Laboral</td><td>0</td><td>3</td><td>3</td><td>No tiene</td></tr>
+<tr><td>45</td><td>SIS849</td><td>Taller de Grado I</td><td>0</td><td>3</td><td>3</td><td>No tiene</td></tr>
+
+<!-- NOVENO SEMESTRE -->
+<tr><td>46</td><td>SIS939</td><td>Informática Forense</td><td>2</td><td>2</td><td>4</td><td>No tiene</td></tr>
+<tr><td>47</td><td>SIS940</td><td>Taller de Grado II</td><td>0</td><td>3</td><td>3</td><td>No tiene</td></tr>
+
+<!-- OPTATIVAS -->
+<tr><td>48</td><td>OPT001</td><td>Sistemas Distribuidos</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>49</td><td>OPT002</td><td>Sistemas Expertos</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>50</td><td>OPT003</td><td>Programación Concurrente y Distribuido</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>51</td><td>OPT004</td><td>Criptografía</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>52</td><td>OPT005</td><td>Robótica</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>53</td><td>OPT006</td><td>Autómatas</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>54</td><td>OPT007</td><td>Microcontroladores</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>55</td><td>OPT008</td><td>Inteligencia Artificial</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>56</td><td>OPT009</td><td>Base de Datos II</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>57</td><td>OPT010</td><td>Taller de Estructura de Datos</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>58</td><td>OPT011</td><td>Compiladores</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>59</td><td>OPT012</td><td>Sistemas de Información Empresariales</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>60</td><td>OPT013</td><td>Sistemas de Información Geográfica</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>61</td><td>OPT014</td><td>Gobierno Electrónico</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>62</td><td>OPT015</td><td>Ética Profesional</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>63</td><td>OPT016</td><td>Quechua</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>64</td><td>OPT017</td><td>Antenas y Propagación</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>65</td><td>OPT018</td><td>Telecomunicaciones</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>66</td><td>OPT019</td><td>Telemática</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>67</td><td>OPT020</td><td>Programación de Sockets</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>68</td><td>OPT021</td><td>Tráfico y Colisiones</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+<tr><td>69</td><td>OPT022</td><td>Teoría de Control</td><td>6</td><td>0</td><td>6</td><td>No tiene</td></tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
